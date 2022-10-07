@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+    --main-color: #ff4500;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+    --text-primary: #fff;
+    --lower-color: #999;
+    --general-font-size: 1.6rem;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+}
+
+section {
+    padding: 2rem 4%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.header-btn {
+    margin-top: 1rem;
+}
+
+.primary-btn {
+    background: var(--main-color);
+}
+
+.secondary-btn {
+    outline: 1px solid var(--text-primary);
+    outline-offset: -1px;
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+// =======================section headings go here=======================//
+.main_section {
+    &_main--heading {
+        margin-top: 4rem;
+        h4 {
+            font-size: 2.2rem;
+            color: var(--lower-color);
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    &_top--discription {
+        padding: 2rem 0;
+        p {
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+}
+
+//==================margin bottom utility code for section bottom padding =================/
+.padding-bottom-util {
+    padding-bottom: 7rem;
+}
+
+//=================hover underline on links==========================//
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4500;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+// =======================page banner ================================/
+.page_banner_main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.823), rgba(0, 0, 0, 0.6)), url(/images/img-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    &_banner--content {
+        max-width: 80rem;
+        h3 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: var(--text-primary);
+        }
+    }
+}

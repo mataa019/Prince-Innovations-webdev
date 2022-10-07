@@ -1,0 +1,23 @@
+{
+  "name": "matta",
+  "version": "1.0.0",
+  "description": "business website created by mike nymabe",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/index.scss css/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike-Nyambe/Prince-innovations.git"
+  },
+  "author": "Mike Nyambe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mike-Nyambe/Prince-innovations/issues"
+  },
+  "homepage": "https://github.com/Mike-Nyambe/Prince-innovations#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "node-sass": "^7.0.3"
+  }
+}

@@ -1,0 +1,89 @@
+/* media queries  */
+
+@media (max-width:900px) {
+    html {
+        font-size: 55%;
+    }
+    .service_section {
+        .inner_card_section {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+    .logo_img_about {
+        img {
+            display: none;
+        }
+    }
+    .team_section {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width:768px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0E0AFF;
+        transition: top 1s ease 0s;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content h3 {
+        font-size: 2.7rem;
+    }
+    .content p {
+        font-size: 2.3rem;
+    }
+    .service_section {
+        .inner_card_section {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    .about_log {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .service_section {
+        .inner_card_section {
+            padding: 0;
+        }
+    }
+    .why_us {
+        &_content--inner {
+            text-align: left;
+        }
+    }
+}

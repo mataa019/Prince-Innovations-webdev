@@ -1,0 +1,22 @@
+.why_us {
+    background-image: linear-gradient( rgba(0, 35, 175, 0.823), rgba(0, 35, 175, 0.823)), url(/images/why-work.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .why-us-util {
+        padding: 20rem 0;
+    }
+    &_content--inner {
+        text-align: center;
+        color: #fff;
+        h2 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+        }
+        p {
+            font-size: var(--general-font-size);
+        }
+    }
+}

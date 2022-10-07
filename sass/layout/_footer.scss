@@ -1,0 +1,41 @@
+.footer_section {
+    padding: 2rem 2%;
+    .foot-util {
+        padding: 5rem 0;
+    }
+    background-color: #0E0AFF;
+    &_footer--logo {
+        img {
+            height: 8rem;
+            height: 8rem;
+        }
+    }
+    &_links {
+        h4 {
+            font-size: 1.8rem;
+            color: #999;
+            text-transform: uppercase;
+        }
+        ul {
+            list-style: none;
+            li {
+                font-size: var(--general-font-size);
+                padding: 6px 0;
+                text-transform: capitalize;
+                a {
+                    color: #fff;
+                }
+            }
+            a:hover {
+                color: #999;
+            }
+        }
+    }
+    &_copyright {
+        text-align: center;
+        p {
+            font-size: var(--general-font-size);
+            color: #fff;
+        }
+    }
+}

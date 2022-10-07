@@ -1,0 +1,125 @@
+.service_section {
+    .inner_card_section {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    &_content-cards {
+        background-color: #fff;
+        height: 100%;
+        padding: 3rem;
+        border-radius: 5px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        h4 {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+            text-transform: capitalize;
+        }
+        p {
+            font-size: var(--general-font-size);
+            line-height: 2rem;
+        }
+    }
+}
+
+//================================= css for the services section main page===========================//
+.services_main {
+    .row-gutter-util {
+        margin-top: 8rem;
+    }
+    &_inner_content {
+        padding: 8rem 0 0 0;
+        h4 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    &_col_content {
+        margin-top: 2rem;
+        h4 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            padding-bottom: 3rem;
+        }
+        p {
+            font-size: var(--general-font-size);
+        }
+    }
+    .why_us_main {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.261), rgba(0, 0, 0, 0.193)), url(/images/services-gd.jpg);
+        background-size: cover;
+        background-position: center;
+        &_inner-content {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            .why-card {
+                padding: 2rem;
+                width: 70%;
+                background: #ff440092;
+                border-radius: 5px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.6px);
+                -webkit-backdrop-filter: blur(3.6px);
+                h4 {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: var(--general-font-size);
+                    padding: 3rem 0;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        font-size: var(--general-font-size);
+                        .secrvice-check {
+                            height: 2.4rem;
+                            width: 2.4rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .busines_section {
+        margin-top: 8rem;
+    }
+    .b-sec-bottom-util {
+        margin-bottom: 8rem;
+    }
+    .inner_business_sec {
+        margin-top: 2rem;
+        .service-card {
+            background-color: #fff;
+            height: 100%;
+            padding: 3rem;
+            border-radius: 5px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            .icon-heading {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                margin-bottom: 2rem;
+                img {
+                    height: 4rem;
+                    width: 4rem;
+                }
+                h4 {
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                font-size: var(--general-font-size);
+            }
+            img {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+    }
+}
